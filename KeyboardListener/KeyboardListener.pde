@@ -19,7 +19,7 @@ ellipse(leftEyeX, leftEyeY, leftEyeDiameter, leftEyeDiameter);
 ellipse(rightEyeX, rightEyeY, rightEyeDiameter, rightEyeDiameter);
 triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
  arc(325, 400, 150, 150, -PI+PI, PIE);  
- fill(204, 102, 0);
+ fill(255, 0, 0);
  ellipse(measlesX1, measlesY1, measlesDiameter, measlesDiameter);
 }//End setup
 
@@ -27,6 +27,9 @@ void draw() {
  
 }//End draw
 
-void keyPressed() {}//End keyPressed
+void keyPressed() {
+//Quit Keyboard Button
+if(key == 'q' || key == 'Q') { exit();}//End IF
+}//End keyPressed
 
 void mousePressed() {}//End mousePressed
