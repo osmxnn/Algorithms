@@ -1,18 +1,24 @@
 //Global Variables
-int centerX, centerY;
+int faceX, faceY;
 int faceDiameter;
+int leftEyeX, leftEyeY, leftEyeDiameter;
+int rightEyeX, rightEyeY, rightEyeDiameter;
+//nose
+//mouth
 
 void setup() {
 size (650, 600);
 //fullScreen();
 println("Screen Width is", displayWidth, "Screen Height is", displayHeight);
 //rect();
-centerX = width/2;
-centerY = height/2;
+faceX = width/2;
+faceY = height/2;
 faceDiameter = height;
-
-ellipse(centerX, centerY, faceDiameter, faceDiameter);
-
+//leftEyeDiameter =;
+//leftEyeX =;
+//leftEyeY = ;
+ellipse(faceX, faceY, faceDiameter, faceDiameter);
+ellipse(leftEyeX, leftEyeY, leftEyeDiameter, leftEyeDiameter);
 
 }//End setup
 
